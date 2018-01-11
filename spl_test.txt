@@ -1,0 +1,20 @@
+
+drop table traveldb;
+create table travelDB
+( 	tvid int,
+	tvname varchar(20),
+    longitude double,
+    latitude double,
+    content varchar(1000),
+    catagory varchar(30),
+    
+    constraint pk_id primary key(tvid)
+);
+
+insert into travelDB(tvid,tvname,latitude,longitude,content,catagory) value(1,"Yoo_Home",37.598676,126.915560,"nearby_Eung-gam_Station","home");
+insert into travelDB(tvid,tvname,latitude,longitude,content,catagory) value(2,"Ewha_wU",37.561883,126.946829,"near_by_Sinchon_station","school");
+insert into travelDB(tvid,tvname,latitude,longitude,content,catagory) value(3,"Dongduk_WU",37.606558,127.041754,"Women_school","school");
+
+insert into travelDB(tvid,tvname,latitude,longitude,content,catagory) value(4,"test",35.505690,126.495969,"2222","111");
+
+select * from travelDB;
